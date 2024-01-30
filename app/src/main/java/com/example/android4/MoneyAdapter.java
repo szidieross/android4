@@ -52,8 +52,8 @@ public class MoneyAdapter extends BaseAdapter {
 
         moneyImageView.setImageResource(money.getImageResourceId());
 
-        codeTextView.setText("Code: " + money.getCode());
-        nameTextView.setText("Name: " + money.getName());
+        codeTextView.setText(money.getCode());
+        nameTextView.setText(money.getName());
         buyValueTextView.setText("Buy Value: " + money.getBuyValue());
         sendValueTextView.setText("Send Value: " + money.getSendValue());
 
