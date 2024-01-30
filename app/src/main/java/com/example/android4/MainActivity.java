@@ -3,6 +3,8 @@ package com.example.android4;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -28,5 +30,11 @@ public class MainActivity extends AppCompatActivity {
         list.add(new Money("DKK", "Coroana deneya", 3.41, 7.55));
         list.add(new Money("HUF", "Forint maghiar", 7.41, 8.55));
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+            }
+        });
     }
 }
