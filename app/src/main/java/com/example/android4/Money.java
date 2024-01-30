@@ -5,12 +5,14 @@ public class Money {
     private String name;
     private double buyValue;
     private double sendValue;
+    private int imageResourceId;
 
-    public Money(String code, String name, double buyValue, double sendValue) {
+    public Money(String code, String name, double buyValue, double sendValue, int imageResourceId) {
         this.code = code;
         this.name = name;
         this.buyValue = buyValue;
         this.sendValue = sendValue;
+        this.imageResourceId = imageResourceId;
     }
 
     public String getCode() {
@@ -27,5 +29,9 @@ public class Money {
 
     public double getSendValue() {
         return sendValue;
+    }
+
+    public int getImageResourceId() {
+        return imageResourceId;
     }
 }
